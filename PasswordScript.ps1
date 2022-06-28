@@ -1,6 +1,6 @@
-$url = "Insert your value here."
-$loginName = "Insert your value here."
-$Pass = "Insert your value here."
+$url = "http://192.168.1.1/1.2.4/login.html"
+$loginName = "admin"
+$Pass = "XX37Msw3XdGSYMM"
 
 
 #GeneratesRandom Password to be used for changing wifi password.
@@ -67,3 +67,6 @@ $pwd_24g.value = "$CreatePassword"
 
 $Save = $ie.document.getElementByID('save')
 $Save.click()
+
+$confirmButton = $ie.document.getElementByName('confirm')
+$confirmButton.click()
